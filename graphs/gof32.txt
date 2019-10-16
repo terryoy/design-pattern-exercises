@@ -1,0 +1,29 @@
+@startmindmap
+* GoF的32个设计模式
+** 创建型模式
+***_ 抽象工厂 (Abstract Factory)
+***_ 构造器 (Builder Pattern)
+***_ 工厂方法 (Factory Method pattern)
+***_ 原型 (Prototype pattern)
+***_ 单例模式 (Singleton pattern)
+** 结构型模式
+***_ 适配器(Adapter pattern)
+***_ 桥接(Bridge pattern)
+***_ 组合(Composite pattern)
+***_ 装饰(Decorator pattern)
+***_ 外观(Façade pattern)
+***_ 享元(Flyweight pattern)
+***_ 代理(Proxy pattern)
+** 行为模式
+***_ 职责链(Chain-of-responsibility pattern)
+***_ 命令(Command pattern)
+***_ 翻译器(Interpreter pattern)
+***_ 迭代器(Iterator pattern)
+***_ 中介者(Mediator pattern)
+***_ 回忆(Memento pattern)
+***_ 观察者(Observer pattern)
+***_ 状态机(State pattern)
+***_ 策略(Strategy pattern)
+***_ 模板方法(Template method pattern)
+***_ 参观者(Visitor)
+@endmindmap
