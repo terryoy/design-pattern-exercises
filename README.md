@@ -45,14 +45,14 @@ HFDP(Head First Design Pattern)的作者说，使用设计模式有3个层次：
 
 ### 1.4 反模式
 
-反面模式（anti-pattern或antipattern）指的是在实践中明显出现但又低效或是有待优化的设计模式，是用来解决问题的带有共同性的不良方法。
+反模式（anti-pattern）指的是在实践中对反复出现问题产生的不良解决方法，往往是低效的或者是有很大出错风险的错误实践。
 
-它们已经经过研究并分类，以防止日后重蹈覆辙，并能在研发尚未投产的系统时辨认出来。
+对它们进行研究并分类，可以防止日后重蹈覆辙，并能在研发尚未投产的系统时辨认出来。
 
-按《AntiPatterns》作者的说法，可以用至少两个关键因素来把反面模式和不良习惯、错误的实践或糟糕的想法区分开来：
+按《AntiPatterns》作者的说法，可以用至少两个关键因素来把反模式和单纯的坏习惯、糟糕的想法区分开来：
 
   * 行动、过程和结构中的一些重复出现的乍一看是有益的，但最终得不偿失的模式
-  * 在实践中证明且可重复的清晰记录的重构方案
+  * 有另一个已经被记录过、可重复的、且有效解决这个问题的重构方案
 
 
 ## 二、GoF（Gang of Four，四人帮）23个设计模式
@@ -84,6 +84,22 @@ HFDP(Head First Design Pattern)的作者说，使用设计模式有3个层次：
 
 本教程中的例子会尽量以TypeScript的形式来编写，因为TypeScript的语言更接近OO语言的表达形式，同时也是让大家从JavaScript转向TypeScript的练习机会。
 
+在本工程下面已经配置了 ES6、TypeScript 的执行环境和单元测试环境，可以用以下命令来执行每个目录下的代码：
+
+```sh
+
+# 执行ES6代码的例子
+$ npm runjs 01-abstract-factory/examples/01/js/main.js
+# 执行 ES6 测试代码的例子（测试用例以 ".spec.js" 结尾）
+$ npm testjs 01-abstract-factory/examples/01/js/
+
+# 执行 TypeScript 的例子
+$ npm runjs 01-abstract-factory/examples/01/ts/main.ts
+# 执行 TypeScript 测试代码的例子（测试用例以 “.spec.ts” 结尾）
+$ npm testts 01-abstract-factory/examples/01/ts/
+
+```
+
 ## 四、设计模式列表
 
 本教程里面的设计模式的顺序，并非按照GoF的设计模式列表或其他书籍的顺序，而是按照我们在JavaScript里面容易见到的场景，结合项目的需要来排优先级，按准备情况而确定的。
@@ -96,7 +112,7 @@ HFDP(Head First Design Pattern)的作者说，使用设计模式有3个层次：
 
 ## 其他参考
 
-[Design Patterns in JS(GoF 23)](https://github.com/fbeline/design-patterns-JS)
-[StarUML Design Patterns(GoF 23)](https://github.com/loredanacirstea/staruml-design-patterns)
-[React in Patterns(中文版)](https://github.com/SangKa/react-in-patterns-cn)
-[React Design Patterns and Best Practices](https://github.com/MicheleBertoli/react-design-patterns-and-best-practices)
+ - [Design Patterns in JS(GoF 23)](https://github.com/fbeline/design-patterns-JS)
+ - [StarUML Design Patterns(GoF 23)](https://github.com/loredanacirstea/staruml-design-patterns)
+ - [React in Patterns(中文版)](https://github.com/SangKa/react-in-patterns-cn)
+ - [React Design Patterns and Best Practices](https://github.com/MicheleBertoli/react-design-patterns-and-best-practices)

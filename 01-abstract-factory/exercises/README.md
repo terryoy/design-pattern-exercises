@@ -1,27 +1,39 @@
 
 ===================
 
-### 练习1: 创建不同风格的按钮控件
+### 练习1: 创建不同风格的确认弹窗
 
 问题场景：
 
-在我们的项目里，我们会有三种不同样式风格的按钮：
+在我们的项目里，我们会有三种不同样式风格的确认弹窗，弹窗的按钮分别会有三种样式
 
- * Default，白色边框
  * Primary，蓝色底白色字的按钮
+ * Warning, 黄色底白色字的按钮
  * Danger，红色底白色字的按钮
 
- 我们希望通过封装按钮创建的方法，使得开发者可以通过调一个含义明确的方法来获得想要的样式按钮，不需要了解按钮的配置参数。
+ 我们希望构造弹窗的代码和样式无关，它聚焦在如何显示信息和确认关闭的逻辑上。
 
 ```
 
-class Button {
-  type: string;
+abstract class Button {
+  text: string;
 }
 
-class ButtonFactory {
-  createButton():Button;
+abstract class Modal {
+  promptMessage: string;
+  confirmButton: Button;
+
+  abstract show(): void;
+  // ... add confirmButton click event handler
 }
+
+function createModal(type: string): Modal {
+  // ...
+}
+
+const defaultModal = createModal('primary');
+const warningModal = createModal('warning');
+const errorModal = createModal('danger');
 
 ```
 
