@@ -89,14 +89,14 @@ HFDP(Head First Design Pattern)的作者说，使用设计模式有3个层次：
 ```sh
 
 # 执行ES6代码的例子
-$ npm runjs 01-abstract-factory/examples/01/js/main.js
+$ yarn runjs 01-abstract-factory/examples/01/js/main.js
 # 执行 ES6 测试代码的例子（测试用例以 ".spec.js" 结尾）
-$ npm testjs 01-abstract-factory/examples/01/js/
+$ yarn testjs 01-abstract-factory/examples/01/js/
 
 # 执行 TypeScript 的例子
-$ npm runjs 01-abstract-factory/examples/01/ts/main.ts
+$ yarn runjs 01-abstract-factory/examples/01/ts/main.ts
 # 执行 TypeScript 测试代码的例子（测试用例以 “.spec.ts” 结尾）
-$ npm testts 01-abstract-factory/examples/01/ts/
+$ yarn testts 01-abstract-factory/examples/01/ts/
 
 ```
 
