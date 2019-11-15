@@ -20,7 +20,10 @@
 如果我们把 UI 组件看成是 Product 的话，那么这个Abstract Factory就是对组件按不同
 风格去生成实体组件的一个组件工厂的抽象接口。
 
-同时需要留意到，我们还需要对 UI 组件设计出一个抽象类，这个 UI 组件对
+当Client需要的是一个用于创建各种构件的工具方法的时候，使用Abstract Factory的某一
+个实体类来初始化的时候，只需要指定相应的工厂（Concrete1或Concrete2）。之后创建组
+件的方法，以及创建出来的组件都是基于抽象接口的（createProductA，返回的是
+AbstractProductA）。因此，对于Client来说它的构造代码不需要对应不同的UI而写两分代码。
 
 ### 适用性
 
