@@ -1,4 +1,4 @@
-# 例子01 
+# 例子01 MazeBuilder
 
 
 

@@ -1,8 +1,13 @@
- import { Node } from './RichTextConvertor';
-
 // Product Parts
 /* HTML Nodes for converting */
-export abstract class HTMLNode extends Node {
+export abstract class HTMLNode {
+  type:string;
+  constructor(type:string) {
+    this.type = type;
+  }
+
+  abstract start():string;
+  abstract end():string;
 }
 
 export class HTMLSimpleNode extends HTMLNode {

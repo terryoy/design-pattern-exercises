@@ -1,15 +1,4 @@
 
-
-export abstract class Node {
-  type:string;
-  constructor(type:string) {
-    this.type = type;
-  }
-
-  abstract start():string;
-  abstract end():string;
-}
-
 // Abstract Factory
 export abstract class RichTextConvertor {
   abstract startDocument():RichTextConvertor;
