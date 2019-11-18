@@ -7,9 +7,8 @@ import RichTextToHTMLConvertor from './builder/RichTextToHTMLConvertor';
 class Client {
 
   convert(data: object): string {
-    const reader = new RichTextReader();
     const convertor = new RichTextToHTMLConvertor();
-    reader.setConvertor(convertor);
+    const reader = new RichTextReader(convertor);
     return reader.parse(data);
   }
 }
@@ -18,5 +17,5 @@ class Client {
 const client = new Client();
 const html = client.convert(DocumentData);
 
-console.log('Source:\n', JSON.stringify(DocumentData, null, '  '));
-console.log('HTML Result:\n', html);
+// console.log('Source:\n', JSON.stringify(DocumentData, null, '  '));
+console.log(`HTML Result:\n${html}`);

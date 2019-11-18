@@ -94,7 +94,7 @@ $ yarn runjs 01-abstract-factory/examples/01/js/main.js
 $ yarn testjs 01-abstract-factory/examples/01/js/
 
 # 执行 TypeScript 的例子
-$ yarn runjs 01-abstract-factory/examples/01/ts/main.ts
+$ yarn runts 01-abstract-factory/examples/01/ts/main.ts
 # 执行 TypeScript 测试代码的例子（测试用例以 “.spec.ts” 结尾）
 $ yarn testts 01-abstract-factory/examples/01/ts/
 
@@ -107,7 +107,7 @@ $ yarn testts 01-abstract-factory/examples/01/ts/
 | 编号     | 设计模式名字                             |
 | :------ | :------------------------------------- |
 | 01      | [抽象工厂（Abstract Factory）](01-abstract-factory/README.md)             |
-| 02      | [生成器（builder）](02-builder/README.md)                       |
+| 02      | [生成器（Builder）](02-builder/README.md)                       |
 
 
 ## 其他参考

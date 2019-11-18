@@ -41,6 +41,7 @@ TextConverter对象负责进行数据转换，以及用特定格式表示该标�
 （[图片来源](https://github.com/loredanacirstea/staruml-design-patterns/raw/master/generated/Model/loretek/design_patterns/creational/builder/builder_seq.png)）
 
 
+RTFReader的一个Java实现参考：<https://www.oodesign.com/builder-pattern.html>
 
 ##### 与抽象工厂（Abstract factory)的区别
 

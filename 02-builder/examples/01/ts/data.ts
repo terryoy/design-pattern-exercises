@@ -4,7 +4,8 @@ const DocumentData = {
   type: "document",
   nodes: [
     {
-      type: "header1",
+      type: "header",
+      level: 1,
       nodes: [
         {
           type: "text",
