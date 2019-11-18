@@ -1,5 +1,6 @@
 import RichTextConvertor, { Node } from './RichTextConvertor';
 
+// Product Parts
 /* HTML Nodes for converting */
 abstract class HTMLNode extends Node {
   renderChildren(): string {
@@ -62,6 +63,7 @@ class HTMLTextNode extends HTMLNode {
   }
 }
 
+// Concrete Factory
 /* A builder for converting */
 class RichTextToHTMLConvertor extends RichTextConvertor {
 

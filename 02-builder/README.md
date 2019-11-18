@@ -43,6 +43,7 @@ TextConverter对象负责进行数据转换，以及用特定格式表示该标�
 
 RTFReader的一个Java实现参考：<https://www.oodesign.com/builder-pattern.html>
 
+
 ##### 与抽象工厂（Abstract factory)的区别
 
 不知道大家有没有留意到，在[抽象工厂(Abstract Factory)](../01-abstract-factory/README.md)
@@ -50,10 +51,19 @@ RTFReader的一个Java实现参考：<https://www.oodesign.com/builder-pattern.h
 buildPartA()、buildPartB()这样相似的方法。那么Builder跟AbstractFactory的区别是什
 么呢？
 
-我认为最大的区别在于，**在Builder这里，UI是通过数据来构造的，而不是通过代码来构造的。**
+一个明显的差别是：对于工厂模式，最终的生成物Product的过程是在Client这一端；而在
+Builder模式当中，生成物Product是在Builder获得的。造成这种差异的原因是：
 
+* Builder模式内部对象的**构造顺序必须是稳定的**。
+* Builder模式要构建的产品中，对象的结构是复杂多变的，为了适应这种变化，因此往往是
+  用数据而不是代码来表达这个结构。
+* Product的整体与部件的关系，是在Builder内部实现的；而Factory模式中，部件之间的
+  联系是很难在构建时表达的，因为它们都是在Client端完成组装的。
 
+具体可以参看[例子02](examples/README.md)与抽象工厂模式的区别。
 
 ### 适用性
 
 以下情况适用 Builder 模式：
+
+*

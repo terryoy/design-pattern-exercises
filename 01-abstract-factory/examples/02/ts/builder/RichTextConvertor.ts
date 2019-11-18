@@ -16,6 +16,7 @@ export abstract class Node {
   abstract render():string;
 }
 
+// Abstract Factory
 export abstract class RichTextConvertor {
   abstract createDocument():Node;
   abstract createHeader(level: number):Node;

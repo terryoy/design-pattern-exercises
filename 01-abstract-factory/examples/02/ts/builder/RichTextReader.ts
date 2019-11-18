@@ -1,6 +1,7 @@
 
 import RichTextConvertor, { Node } from './RichTextConvertor';
 
+// Client of the Factory(RichTextConvertor)
 class RichTextReader {
   convertor: RichTextConvertor;
 
