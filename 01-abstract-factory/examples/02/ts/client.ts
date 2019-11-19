@@ -1,9 +1,9 @@
 
 import DocumentData from './data';
-import RichTextReader from './builder/RichTextReader';
-import RichTextToHTMLConvertor from './builder/RichTextToHTMLConvertor';
+import RichTextReader from './convertor/RichTextReader';
+import RichTextToHTMLConvertor from './convertor/RichTextToHTMLConvertor';
 
-class Client {
+export class Client {
 
   convert(data: object): string {
     const convertor = new RichTextToHTMLConvertor();

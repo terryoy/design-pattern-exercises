@@ -1,15 +1,14 @@
-import RichTextConvertor, { Node } from './RichTextConvertor';
-import { HTMLSimpleNode, HTMLTextNode, HTMLHeaderNode, HTMLDocumentNode } from './HTMLNodes';
+import RichTextConvertor from './RichTextConvertor';
+import { HTMLNode, HTMLSimpleNode, HTMLTextNode, HTMLHeaderNode, HTMLDocumentNode } from './HTMLNodes';
 
 
-// Concrete Factory
+// Concrete Builder
 /* A builder for converting */
-class RichTextToHTMLConvertor extends RichTextConvertor {
+class RichTextToHTMLConvertor implements RichTextConvertor {
   html: string;
-  stack: Node[];
+  stack: HTMLNode[];
 
   constructor() {
-    super();
     this.html = '';
     this.stack = [];
   }
@@ -48,7 +47,7 @@ class RichTextToHTMLConvertor extends RichTextConvertor {
     return this.startNode(new HTMLSimpleNode("strikethrough"));
   }
 
-  startNode(node:Node):RichTextConvertor {
+  startNode(node:HTMLNode):RichTextConvertor {
     this.html += node.start();
     this.stack.push(node);
     return this;

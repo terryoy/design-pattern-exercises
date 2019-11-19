@@ -11,7 +11,7 @@ TypeScript 版本放在 01/ts/ 目录下
 该数据格式大致有以下几种节点：
 
 * document，标记着一个文档的根
-* header1, 一级标题
+* header1...header5, 多级级标题
 * text，文本节点
 * bold，粗体
 * italic, 斜体

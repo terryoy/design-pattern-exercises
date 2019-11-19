@@ -1,20 +1,20 @@
 
-// Abstract Factory
-export abstract class RichTextConvertor {
-  abstract startDocument():RichTextConvertor;
-  abstract startHeader(level: number):RichTextConvertor;
-  abstract startParagraph():RichTextConvertor;
-  abstract startText(text: string):RichTextConvertor;
-  abstract startBold():RichTextConvertor;
-  abstract startItalic():RichTextConvertor;
-  abstract startUnderline():RichTextConvertor;
-  abstract startStrikeThrough():RichTextConvertor;
+// Builder Interface
+export interface RichTextConvertor {
+  startDocument():RichTextConvertor;
+  startHeader(level: number):RichTextConvertor;
+  startParagraph():RichTextConvertor;
+  startText(text: string):RichTextConvertor;
+  startBold():RichTextConvertor;
+  startItalic():RichTextConvertor;
+  startUnderline():RichTextConvertor;
+  startStrikeThrough():RichTextConvertor;
 
-  abstract endNode():RichTextConvertor; // end
+  endNode():RichTextConvertor; // end
 
-  // not neccessary in the abstract class
-  abstract reset():void; // rebuild content
-  abstract getResult():string; // get string content
+  // not neccessary in the class
+  reset():void; // rebuild content
+  getResult():string; // get string content
 }
 
 export default RichTextConvertor;

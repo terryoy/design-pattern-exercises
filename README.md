@@ -116,3 +116,4 @@ $ yarn testts 01-abstract-factory/examples/01/ts/
  - [StarUML Design Patterns(GoF 23)](https://github.com/loredanacirstea/staruml-design-patterns)
  - [React in Patterns(中文版)](https://github.com/SangKa/react-in-patterns-cn)
  - [React Design Patterns and Best Practices](https://github.com/MicheleBertoli/react-design-patterns-and-best-practices)
+ - [OODesign - Design Patterns](https://www.oodesign.com/)

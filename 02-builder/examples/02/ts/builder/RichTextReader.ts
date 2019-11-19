@@ -1,7 +1,7 @@
 
 import RichTextConvertor from './RichTextConvertor';
 
-// Factory Client
+// Director
 class RichTextReader {
   convertor: RichTextConvertor;
 

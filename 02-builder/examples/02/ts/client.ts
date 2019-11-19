@@ -3,8 +3,7 @@ import DocumentData from './data';
 import RichTextReader from './builder/RichTextReader';
 import RichTextToHTMLConvertor from './builder/RichTextToHTMLConvertor';
 
-class Client {
-
+export class Client {
   convert(data: object): string {
     const convertor = new RichTextToHTMLConvertor();
     const reader = new RichTextReader(convertor);
@@ -13,8 +12,6 @@ class Client {
   }
 }
 
-
 const client = new Client();
 const html = client.convert(DocumentData);
-
 console.log(`HTML Result:\n${html}`);
