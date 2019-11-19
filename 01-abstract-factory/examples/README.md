@@ -24,3 +24,8 @@ TypeScript 版本放在 `02/ts/` 目录下
 示例数据在 `02/ts/data.ts`
 
 这个例子主要用来与Builder模式做个区分，面对同一个问题的时候可能有两种不同的写法。
+
+可执行测试（在根目录下执行）：
+```
+$ yarn testts 01-abstract-factory/examples/02/ts/
+```

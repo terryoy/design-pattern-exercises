@@ -22,3 +22,8 @@
 
 TypeScript 版本放在 `02/ts/` 目录下
 示例数据在 `02/ts/data.ts`
+
+可执行测试（在根目录下执行）：
+```
+$ yarn testts 02-builder/examples/02/ts/
+```
