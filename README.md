@@ -106,8 +106,9 @@ $ yarn testts 01-abstract-factory/examples/01/ts/
 
 | 编号     | 设计模式名字                             |
 | :------ | :------------------------------------- |
-| 01      | [抽象工厂（Abstract Factory）](01-abstract-factory/README.md)             |
+| 01      | [抽象工厂（Abstract Factory）](01-abstract-factory/README.md)   |
 | 02      | [生成器（Builder）](02-builder/README.md)                       |
+| 03      | [迭代器（Iterator）](03-iterator/README.md)                     |
 
 
 ## 其他参考
